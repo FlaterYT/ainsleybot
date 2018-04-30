@@ -1,6 +1,7 @@
-discord
+discord.py==0.16.12
+aiohttp
+websockets
+chardet
 asyncio
-Pymoe
-requests
-simplejson
-apiai
+requests==2.18.4
+gtts==1.2.2
