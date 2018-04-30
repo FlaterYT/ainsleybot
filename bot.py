@@ -37,4 +37,4 @@ async def on_message(message):
     
         await client.send_message(message.channel,"qolpak")
 
-client.run(process.evn.BOT_TOKEN);
+client.run(settings.TOKEN)
