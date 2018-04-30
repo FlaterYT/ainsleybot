@@ -2,6 +2,8 @@
   "name": "ainsley",
   "version": "1.0.0",
   "description": "ainsley 420 on the blunt",
+  "engines": {
+  "node": "8.9.4"
   "main": "bot.py",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
