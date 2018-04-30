@@ -41,4 +41,4 @@ async def on_message(message):
     
         await client.send_message(message.channel,"qolpak")
 
-client.run(os.environ['BOT_TOKEN'])
+client.run(os.environ[BOT_TOKEN])
