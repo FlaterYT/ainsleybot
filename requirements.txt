@@ -22,7 +22,6 @@ inflect==0.2.5
 itsdangerous==0.24
 jaraco.itertools==2.0
 Jinja2==2.8
-jpglitch==0.2
 jsondatabase==0.1.6
 jsonpickle==0.9.3
 lxml==3.7.1
