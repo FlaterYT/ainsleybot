@@ -1,15 +1,12 @@
 {
-  "name": "susan420",
-  "version": "1.0.0",
-  "description": "susan 420 on the blunt",
+  "name": "ainsley",
+  "description": "bot",
+  "version": "0.0.0",
   "main": "bot.py",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "python bot.py"
   },
-  "author": "not susan",
-  "license": "ISC",
   "dependencies": {
     "discord.py": "^11.3.2",
-    "ms": "^2.1.1"
   }
 }
