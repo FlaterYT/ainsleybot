@@ -37,4 +37,4 @@ async def on_message(message):
     
         await client.send_message(message.channel,"qolpak")
 
-client.run(settings.TOKEN)
+client.login(process.env.B0T_T0KEN);
