@@ -1,2 +1,2 @@
 worker: python bot.py
-worker: npm start
+web: npm start
