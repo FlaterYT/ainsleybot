@@ -1,15 +1,15 @@
 {
-  "name": "discordbot",
+  "name": "susan420",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "susan 420 on the blunt",
+  "main": "bot.py",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "not susan",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.3.2",
-    "mysql": "^2.14.1"
+    "discord.py": "^11.3.2",
+    "ms": "^2.1.1"
   }
 }
