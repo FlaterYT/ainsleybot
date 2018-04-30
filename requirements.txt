@@ -46,8 +46,6 @@ pytz==2016.10
 requests==2.12.4
 requests-oauthlib==0.7.0
 six==1.10.0
-SQLAlchemy==1.1.5.dev0
-steamapi==0.1
 tabulate==0.7.7
 textblob==0.11.1
 texttable==0.8.7
