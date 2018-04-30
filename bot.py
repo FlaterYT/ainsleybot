@@ -1,9 +1,13 @@
-import discord
-from discord.ext.commands import Bot
+import asyncio, discord
+import os, traceback, linecache, logging
+import re, time, datetime
+import textwrap
 from discord.ext import commands
-import asyncio
-import time
-from discord.utils import find
+from discord.state import ConnectionState
+from sqlalchemy import create_engine
+from sqlalchemy.orm import scoped_session, sessionmaker
+from utils import checks
+from utils.funcs import Funcs
 
 Client = discord.Client()
 client = commands.Bot(command_prefix = "s!")
