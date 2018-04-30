@@ -1,2 +1,1 @@
-worker: bot.py
-web: npm start
+worker: python selfbot.py
