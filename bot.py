@@ -10,6 +10,12 @@ client = commands.Bot(command_prefix = "s!")
 
 @client.event
 async def on_ready():
+    print('Logged in...')
+    print('Username: ' + str(client.user.name))
+    print('Client ID: ' + str(client.user.id))
+
+@client.event
+async def on_ready():
     print("Susan Bot is ready to demonetise!")
 
 @client.event
