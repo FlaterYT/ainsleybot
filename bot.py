@@ -42,4 +42,6 @@ async def on_message(message):
     
         await client.send_message(message.channel,"qolpak")
         
-client.run(os.environ["TOKEN_DISCORD"])
+if not os.environ.get('TOKEN'):
+        print("No Token Found")
+bot.run(os.environ.get('TOKEN').strip('\"'))
