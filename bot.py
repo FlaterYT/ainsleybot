@@ -42,4 +42,4 @@ async def on_message(message):
     
         await client.send_message(message.channel,"qolpak")
         
-client.run(token, bot=True, reconnect=True)
+client.run(token, client=True, reconnect=True)
