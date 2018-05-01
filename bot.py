@@ -5,6 +5,25 @@ import asyncio
 import time
 from discord.utils import find
 
+is_prod = os.environ.get('IS_HEROKU', None)
+if is_prod:
+    token = os.environ.get('TOKEN')
+else:
+    import secreto
+
+    token = secreto.token
+
+user = discord.Member
+''' EVENTOS DO BOT'''
+
+@bot.event
+async def on_ready():
+    print('Logged in')
+    print(bot.user.name)
+    print(bot.user.id)
+    print('------')
+    await bot.change_presence(game=discord.Game(name='meat'))
+
 Client = discord.Client()
 client = commands.Bot(command_prefix = "s!")
 
@@ -30,21 +49,4 @@ async def on_message(message):
     
         await client.send_message(message.channel,"qolpak")
         
-@client.event
-async def on_ready():
-    print("Logged in as")
-    print(client.user.name)
-    print(client.user.id)
-    print("-------")
-    serversConnected = str(len(client.guilds))
-    print("Guilds connected: " + serversConnected)#Returns number of guilds connected to
-    game=discord.Game(name='on ' + serversConnected + ' servers!')
-    await client.change_presence(activity=game)
-    try:
-        await botlist.post_server_count(serversConnected, shardCount)
-        print("Successfully published server count to dbl.")
-    except Exception as e:
-        print("Failed to post server count to tbl.")
-
-while True:
-    client.run(token) #runs the bot.
+bot.run(token)
