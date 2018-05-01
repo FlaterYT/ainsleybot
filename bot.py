@@ -5,17 +5,17 @@ import asyncio
 import time
 from discord.utils import find
 
-@bot.event
+@client.event
 async def on_ready():
 	print('ainsley
 	print('')
 	print('Logged in as:')
-	print(bot.user.name)
+	print(client.user.name)
 	print('')
 	print('Client User ID:')
-	print(bot.user.id)
+	print(client.user.id)
 	print('')
-	await bot.change_presence(game=discord.Game(name='meat' type=3))
+	await client.change_presence(game=discord.Game(name='meat' type=3))
 
 Client = discord.Client()
 client = commands.Bot(command_prefix = "s!")
@@ -42,4 +42,4 @@ async def on_message(message):
     
         await client.send_message(message.channel,"qolpak")
         
-bot.run(os.environ['TOKEN_DISCORD'])
+client.run(os.environ['TOKEN_DISCORD'])
