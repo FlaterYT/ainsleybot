@@ -30,4 +30,4 @@ async def on_message(message):
     
         await client.send_message(message.channel,"qolpak")
 
-client.run ("flater123@gmail.com", "demonetised09")
+client.run ("token")
