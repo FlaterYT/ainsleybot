@@ -7,7 +7,7 @@ from discord.utils import find
 
 @client.event
 async def on_ready():
-	print('ainsley
+	print('ainsley')
 	print('')
 	print('Logged in as:')
 	print(client.user.name)
