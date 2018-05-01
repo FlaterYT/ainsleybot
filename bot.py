@@ -30,17 +30,21 @@ async def on_message(message):
     
         await client.send_message(message.channel,"qolpak")
         
-const Discord = require('discord.js');
-const client = new Discord.Client();
+@client.event
+async def on_ready():
+    print("Logged in as")
+    print(client.user.name)
+    print(client.user.id)
+    print("-------")
+    serversConnected = str(len(client.guilds))
+    print("Guilds connected: " + serversConnected)#Returns number of guilds connected to
+    game=discord.Game(name='on ' + serversConnected + ' servers!')
+    await client.change_presence(activity=game)
+    try:
+        await botlist.post_server_count(serversConnected, shardCount)
+        print("Successfully published server count to dbl.")
+    except Exception as e:
+        print("Failed to post server count to tbl.")
 
-client.on('ready', () => {
-    console.log('I am ready!');
-});
-
-client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
-  	}
-});
-
-client.login(process.env.BOT_TOKEN);
+while True:
+    client.run(token) #runs the bot.
