@@ -5,24 +5,17 @@ import asyncio
 import time
 from discord.utils import find
 
-is_prod = os.environ.get('IS_HEROKU', None)
-if is_prod:
-    token = os.environ.get('TOKEN')
-else:
-    import secreto
-
-    token = secreto.token
-
-user = discord.Member
-''' EVENTOS DO BOT'''
-
 @bot.event
 async def on_ready():
-    print('Logged in')
-    print(bot.user.name)
-    print(bot.user.id)
-    print('------')
-    await bot.change_presence(game=discord.Game(name='meat'))
+	print('ainsley
+	print('')
+	print('Logged in as:')
+	print(bot.user.name)
+	print('')
+	print('Client User ID:')
+	print(bot.user.id)
+	print('')
+	await bot.change_presence(game=discord.Game(name='meat' type=3))
 
 Client = discord.Client()
 client = commands.Bot(command_prefix = "s!")
@@ -49,4 +42,4 @@ async def on_message(message):
     
         await client.send_message(message.channel,"qolpak")
         
-bot.run(token)
+bot.run(os.environ['TOKEN_DISCORD'])
