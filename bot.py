@@ -30,4 +30,4 @@ async def on_message(message):
     
         await client.send_message(message.channel,"qolpak")
 
-client.run ("NDMzODMyNzk3ODgzNDY1NzMx.DcfHAg.kKfBd5qOtkEjRU-v0qN4avcEJbQ")
+client.run ("flater123@gmail.com", "demonetised09")
