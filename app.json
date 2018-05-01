@@ -1,0 +1,20 @@
+{
+  "name": "ainsley.py",
+  "description": "discord selfbot",
+  "website": "http://ainsley.com",
+  "repository": "https://github.com/FlaterYT/ainsleybot",
+  "env": {
+    "TOKEN": {
+        "description": "Discord token used to log in",
+        "required": true
+    },
+    "PREFIX": {
+      "description": "Command prefix to use.",
+      "required": true
+    },
+    "GITHUBTOKEN": {
+      "description": "Token for github api usage.",
+      "required": true
+    }
+  }
+}
