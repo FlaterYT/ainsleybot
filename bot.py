@@ -27,12 +27,12 @@ async def on_ready():
 @client.event
 async def on_message(message):
 
-    if message.content.startswith("pls beg"):
-        await client.send_message(message.channel,"pls beg")
+    if message.content.startswith("--report @Warden#3248"):
+        await client.send_message(message.channel,"--report @Warden#3248")
         
-    if message.content.upper().startswith("pls beg"):
+    if message.content.upper().startswith("--report @Warden#3248"):
     
-        await client.send_message(message.channel,"pls beg")
+        await client.send_message(message.channel,"--report @Warden#3248")
         
     if message.content.upper().startswith("qolpak"):
     
